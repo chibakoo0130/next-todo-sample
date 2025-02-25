@@ -4,7 +4,7 @@ import {
   render,
   screen
 } from '@testing-library/react';
-import Checkbox from './Checkbox';
+import Checkbox from '../../../src/components/atoms/Checkbox';
 
 describe('Checkbox', () => {
   let renderResult: RenderResult;

@@ -1,6 +1,6 @@
 import React, { act } from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
-import TodoContextsProvider, { useTodo } from './TodoContexts';
+import TodoContextsProvider, { useTodo } from '../../src/contexts/TodoContexts';
 
 const TEXT_DECORATION_LINE_THROUGH = 'text-decoration: line-through;';
 
