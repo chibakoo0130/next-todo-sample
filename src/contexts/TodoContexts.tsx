@@ -57,14 +57,6 @@ const TodoContextsProvider = (props: Props) => {
   );
 };
 
-export const useTodoList = () => {
-  const context = useContext(TodoContext);
-  if (!context) {
-    throw new Error('useTodoList must be used within a TodoProvider');
-  }
-  return context;
-};
-
 export const useTodo = () => {
   const context = useContext(TodoContext);
   if (!context) {

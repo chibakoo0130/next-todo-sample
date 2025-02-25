@@ -1,7 +1,6 @@
 import React from 'react';
 import Checkbox from '../atoms/Checkbox';
 import { Todo } from '@/types/todo';
-import { Flex } from '../layout/Flex';
 import Button from '../atoms/Button';
 
 type Props = {
@@ -14,7 +13,7 @@ const TodoItem = (props: Props) => {
   const { todo, completeOnChange, removeOnChange } = props;
   return (
     <>
-      <Flex>
+      <li>
         <Checkbox
           checked={todo.isCompleted}
           onChange={() => completeOnChange(todo.id)}
@@ -25,7 +24,7 @@ const TodoItem = (props: Props) => {
           {todo.title}
         </span>
         <Button onClick={() => removeOnChange(todo.id)} label="削除" />
-      </Flex>
+      </li>
     </>
   );
 };

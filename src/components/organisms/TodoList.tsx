@@ -7,15 +7,17 @@ const TodoList = () => {
 
   return (
     <>
-      {todoList &&
-        todoList.map((todo) => (
-          <TodoItem
-            key={todo.id}
-            todo={todo}
-            completeOnChange={completeTodo}
-            removeOnChange={removeTodo}
-          />
-        ))}
+      <ul>
+        {todoList &&
+          todoList.map((todo) => (
+            <TodoItem
+              key={todo.id}
+              todo={todo}
+              completeOnChange={completeTodo}
+              removeOnChange={removeTodo}
+            />
+          ))}
+      </ul>
     </>
   );
 };
